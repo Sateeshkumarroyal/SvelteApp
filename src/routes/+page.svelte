@@ -1,14 +1,14 @@
 <script>
 import {goto, beforeNavigate, afterNavigate} from '$app/navigation';
 const handleclick = () => {
-    goto('/products);
+    goto('/products');
 };
 
 beforeNavigate((navigate) => {
     console.log({ before:navigation});
 });
 
-afterNavigateNavigate((navigate) => {
+afterNavigate((navigate) => {
     console.log({ after:navigation});
 });
 </script>
